@@ -1,7 +1,9 @@
 import "dotenv/config"
 import express, { urlencoded } from "express";
 import morgan from "morgan"
+import connectDB from "./src/config/db";
 
+connectDB()
 const app = express();
 const PORT = process.env.PORT
 
